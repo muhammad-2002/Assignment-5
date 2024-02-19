@@ -20,7 +20,7 @@
   </head>
   <body>
     <divs class="body">
-      <header class="= w-[85%] mx-auto mt-4">
+      <header class="= w-[95%] lg:w-[85%] mx-auto mt-4">
         <!-- navbar section start hear -->
         <div class="navbar bg-base-100">
           <div class="navbar-start">
@@ -46,11 +46,12 @@
                 class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
               >
                 <li><a>Home</a></li>
-
-                <li><a>Item 3</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
               </ul>
             </div>
-            <a class="btn btn-ghost text-[30px] font-extrabold"
+            <a class="btn btn-ghost text-[15px] lg:text-[30px] font-extrabold"
               >MUNTAHA PARIBAHON</a
             >
           </div>
@@ -85,24 +86,24 @@
           </div>
         </div>
         <!-- banner section start hear -->
-        <div class="mt-5">
+        <div class="mt-5 border">
           <div
-            class="bg-[url('./images/banner.png')] h-[550px] bg-contain bg-no-repeat object-cover flex flex-col items-center gap-3"
+            class="bg-[url('./images/banner.png')] w-full md:w-auto h-[400px] md:h-[550px] bg- md:bg-contain object-cover md:object-contain bg-no-repeat flex flex-col items-center gap-3 rounded-xl md:rounded-none"
           >
-            <div class="mt-[100px] flex flex-col items-center gap-3">
+            <div class="mt-20 md:mt-[100px] flex flex-col items-center gap-3">
               <h1
-                class="text-white font-extrabold text-5xl text-center leading-[70px]"
+                class="text-white font-extrabold text-2xl md:text-5xl text-center leading-[60px]md:leading-[70px]"
               >
                 End-to-End Travel with<br />
                 <span class="text-[#1DD100]">Muntaha Paribahon</span>
               </h1>
-              <p class="text-white w-[600px] text-center">
+              <p class="text-white w-[320px] md:w-[600px] text-center">
                 "Embark on seamless journeys with Muntaha Paribahan's end-to-end
                 travel solutions, ensuring comfort and reliability at every
                 stop."
               </p>
               <button class="btn bg-[#1DD100] border-none text-base font-bold">
-                Buy Tickets
+                <a href="#Buy-ticket">Buy Tickets</a>
               </button>
             </div>
           </div>
@@ -111,42 +112,44 @@
         <div class="my-10">
           <h1 class="text-3xl font-bold text-center">Best offers for you</h1>
 
-          <div class="flex items-center justify-between mt-10">
+          <div
+            class="flex flex-col md:flex-row space-y-11 md:space-y-0 items-center justify-between mt-10 gap-3"
+          >
             <div
-              class="flex justify-center items-center bg-[#FFBF0F] p-10 rounded-md gap-14"
+              class="flex w-[95%] justify-center items-center bg-[#FFBF0F] p-10 rounded-md gap- w"
             >
-              <div class="border-r-2 border-dotted pr-10 relative">
+              <div class="border-r-2 border-dotted pr-7 relative">
                 <div
-                  class="h-10 w-10 rounded-full bg-white absolute left-[270px] -top-[60px]"
+                  class="h-10 w-10 rounded-full bg-white absolute left-[140px] md:left-[270px] -top-[60px]"
                 ></div>
                 <div
-                  class="h-10 w-10 rounded-full bg-white absolute left-[270px] -bottom-[60px]"
+                  class="h-10 w-10 rounded-full bg-white absolute left-[140px] md:left-[270px] -bottom-[60px]"
                 ></div>
-                <h1 class="text-6xl font-bold">15% OFF</h1>
+                <h1 class="md:text-6xl text-2xl font-bold">15% OFF</h1>
                 <p class="text-[14px] font-bold">on your next purchase</p>
                 <p class="text-[10px]">use by March 2024</p>
               </div>
-              <div>
-                <h1 class="text-[32px] font-bold">NEW15</h1>
+              <div class="pl-3">
+                <h1 class="md:text-[32px] text-[20px] font-bold">NEW15</h1>
                 <p>Coupon Code</p>
               </div>
             </div>
             <div
-              class="flex justify-center items-center bg-[#F78C9C] p-10 rounded-md gap-14"
+              class="flex w-[95%] justify-center items-center bg-[#F78C9C] p-10 rounded-md gap- w"
             >
-              <div class="border-r-2 border-dotted pr-10 relative">
+              <div class="border-r-2 border-dotted pr-7 relative">
                 <div
-                  class="h-10 w-10 rounded-full bg-white absolute left-[270px] -top-[60px]"
+                  class="h-10 w-10 rounded-full bg-white absolute left-[140px] md:left-[270px] -top-[60px]"
                 ></div>
                 <div
-                  class="h-10 w-10 rounded-full bg-white absolute left-[270px] -bottom-[60px]"
+                  class="h-10 w-10 rounded-full bg-white absolute left-[140px] md:left-[270px] -bottom-[60px]"
                 ></div>
-                <h1 class="text-6xl font-bold">20% OFF</h1>
+                <h1 class="md:text-6xl text-2xl font-bold">20% OFF</h1>
                 <p class="text-[14px] font-bold">on your next purchase</p>
                 <p class="text-[10px]">use by March 2024</p>
               </div>
-              <div>
-                <h1 class="text-[32px] font-bold">Couple 20</h1>
+              <div class="pl-3">
+                <h1 class="md:text-[32px] text-[20px] font-bold">Couple 20</h1>
                 <p>Coupon Code</p>
               </div>
             </div>
@@ -159,6 +162,7 @@
         </div>
       </header>
       <main
+        id="Buy-ticket"
         class="mt-14 pb-14 rounded-t-[80px] border-[#1DD100] border-solid border-2 border-r-0 border-l-0 border-b-0 bg-[#F7F8F8]"
       >
         <div>
@@ -166,19 +170,21 @@
             class="mt-16 flex justify-center flex-col items-center gap-5 relative"
           >
             <h1 class="text-3xl font-bold text-center">Muntaha Paribahon</h1>
-            <p class="w-[600px] text-center">
+            <p class="md:w-[600px] w-[300px] text-center">
               "Experience the epitome of convenience with Muntaha Paribahan,
               where your travels begin and end effortlessly."
             </p>
           </div>
 
           <div
-            class="w-[70%] mx-auto flex justify-center items-center mt-11 p-5 bg-[#FFF] rounded-md"
+            class="md:w-[70%] w-full mx-auto flex-col md:flex-row flex justify-center items-center mt-11 p-5 bg-[#FFF] rounded-md"
           >
             <div
-              class="flex flex-col justify-center items-center w-[80%] border-r-2 pr-5 border-dashed border-[#1DD100]"
+              class="flex flex-col justify-center items-center md:w-[80%] w-full border-none md:border-r-2 pr-5 md:border-dashed border-[#1DD100]"
             >
-              <div class="flex justify-between items-center w-full">
+              <div
+                class="flex flex-col md:flex-row gap-4 justify-between items-center w-full"
+              >
                 <div class="flex justify-between items-center gap-4">
                   <div>
                     <svg
@@ -237,7 +243,9 @@
                   <p>Departure Time</p>
                   <p>9:00 PM</p>
                 </div>
-                <div class="flex justify-between items-center pt-3">
+                <div
+                  class="flex flex-col md:flex-row gap-4 md:gap-0 justify-between items-center pt-3"
+                >
                   <button class="btn">Boarding Point - Laxmipur</button>
                   <button class="btn">Dropping Point - Bogura</button>
                   <button class="btn">Dropping Point - Bogura</button>
@@ -265,9 +273,9 @@
         </div>
         <!-- select your seat -->
         <div
-          class="w-[70%] mx-auto bg-[#FFF] mt-8 rounded-xl p-5 flex justify-between items-start"
+          class="md:w-[70%] w-full flex-col md:flex-row mx-auto bg-[#FFF] mt-8 rounded-xl p-5 flex justify-between items-start"
         >
-          <div class="pr-4 w-[55%]">
+          <div class="pr-4 w-full md:w-[55%]">
             <h1 class="text-2xl font-bold">Select Your Seat</h1>
             <div
               class="border-dashed border-b-[1px] border-t-[1px] border-[gray] flex justify-between items-center py-5 my-3"
@@ -321,7 +329,7 @@
               </p>
             </div>
             <div class="flex justify-end">
-              <kbd class="kbd w-[110px]"
+              <kbd class="bg-gray-200 flex justify-center rounded-lg w-[110px]"
                 ><p>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -343,87 +351,81 @@
             </div>
             <div class="flex justify-between my-4 gap-1">
               <kbd class="flex justify-center items-center">A</kbd>
-              <kbd class="kbd w-[110px]">A1</kbd>
-              <kbd class="kbd w-[110px]">A2</kbd>
-              <kbd class="kbd w-[110px]">A3</kbd>
-              <kbd class="kbd w-[110px]">A4</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">A1</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">A2</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">A3</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">A4</kbd>
             </div>
             <div class="flex justify-between my-4 gap-1">
               <kbd class="flex justify-center items-center">B</kbd>
-              <kbd class="kbd w-[110px]">B1</kbd>
-              <kbd class="kbd w-[110px]">B2</kbd>
-              <kbd class="kbd w-[110px]">B3</kbd>
-              <kbd class="kbd w-[110px]">B4</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">B1</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">B2</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">B3</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">B4</kbd>
             </div>
             <div class="flex justify-between my-3 gap-1">
               <kbd class="flex justify-center items-center">C</kbd>
-              <kbd class="kbd w-[110px]">C1</kbd>
-              <kbd class="kbd w-[110px]">C2</kbd>
-              <kbd class="kbd w-[110px]">C3</kbd>
-              <kbd class="kbd w-[110px]">C4</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">C1</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">C2</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">C3</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">C4</kbd>
             </div>
             <div class="flex justify-between my-4 gap-1">
               <kbd class="flex justify-center items-center">D</kbd>
-              <kbd class="kbd w-[110px]">D1</kbd>
-              <kbd class="kbd w-[110px]">D2</kbd>
-              <kbd class="kbd w-[110px]">D3</kbd>
-              <kbd class="kbd w-[110px]">4</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">D1</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">D2</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">D3</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">D4</kbd>
             </div>
-            <div class="flex justify-between my-4 gap-1">
-              <kbd class="flex justify-center items-center">D</kbd>
-              <kbd class="kbd w-[110px]">D1</kbd>
-              <kbd class="kbd w-[110px]">D2</kbd>
-              <kbd class="kbd w-[110px]">D3</kbd>
-              <kbd class="kbd w-[110px]">D4</kbd>
-            </div>
+
             <div class="flex justify-between my-4 gap-1">
               <kbd class="flex justify-center items-center">E</kbd>
-              <kbd class="kbd w-[110px]">E1</kbd>
-              <kbd class="kbd w-[110px]">E2</kbd>
-              <kbd class="kbd w-[110px]">E3</kbd>
-              <kbd class="kbd w-[110px]">E4</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">E1</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">E2</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">E3</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">E4</kbd>
             </div>
             <div class="flex justify-between my-4 gap-1">
               <kbd class="flex justify-center items-center">F</kbd>
-              <kbd class="kbd w-[110px]">F1</kbd>
-              <kbd class="kbd w-[110px]">F2</kbd>
-              <kbd class="kbd w-[110px]">F3</kbd>
-              <kbd class="kbd w-[110px]">F4</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">F1</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">F2</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">F3</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">F4</kbd>
             </div>
             <div class="flex justify-between my-4 gap-1">
               <kbd class="flex justify-center items-center">G</kbd>
-              <kbd class="kbd w-[110px]">G1</kbd>
-              <kbd class="kbd w-[110px]">G2</kbd>
-              <kbd class="kbd w-[110px]">G3</kbd>
-              <kbd class="kbd w-[110px]">G4</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">G1</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">G2</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">G3</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">G4</kbd>
             </div>
             <div class="flex justify-between my-4 gap-1">
               <kbd class="flex justify-center items-center">H</kbd>
-              <kbd class="kbd w-[110px]">H1</kbd>
-              <kbd class="kbd w-[110px]">H2</kbd>
-              <kbd class="kbd w-[110px]">H3</kbd>
-              <kbd class="kbd w-[110px]">H4</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">H1</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">H2</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">H3</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">H4</kbd>
             </div>
             <div class="flex justify-between my-4 gap-1">
               <kbd class="flex justify-center items-center">I</kbd>
-              <kbd class="kbd w-[110px]">I1</kbd>
-              <kbd class="kbd w-[110px]">I2</kbd>
-              <kbd class="kbd w-[110px]">I3</kbd>
-              <kbd class="kbd w-[110px]">I4</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">I1</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">I2</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">I3</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">I4</kbd>
             </div>
             <div class="flex justify-between my-4 gap-1">
               <kbd class="flex justify-center items-center">J</kbd>
-              <kbd class="kbd w-[110px]">J1</kbd>
-              <kbd class="kbd w-[110px]">J2</kbd>
-              <kbd class="kbd w-[110px]">J3</kbd>
-              <kbd class="kbd w-[110px]">J4</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">J1</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">J2</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">J3</kbd>
+              <kbd class="kbd w-[110px] cursor-pointer">J4</kbd>
             </div>
           </div>
           <div
-            class="w-[45%] pl-5 p-3 border-dashed border-l-2 border-[#1DD100]"
+            class="md:w-[45%] w-full pl-5 p-3 md:border-dashed border-l-2 border-none md:border-[#1DD100]"
           >
             <h1
-              class="text-2xl font-bold flex justify-end border-b-2 border-dotted"
+              class="text-2xl font-bold flex justify-start md:justify-end border-b-2 border-dotted"
             >
               Select Your Seat
             </h1>
@@ -498,7 +500,7 @@
                 class="w-full border rounded-md p-3"
                 type="number"
                 name=""
-                id=""
+                id="phone-num"
                 placeholder="Enter your phone number"
               />
               <label class="font-bold" for="Email ID">Email ID</label>
@@ -530,7 +532,9 @@
       </main>
 
       <footer class="p-10 bg-[#030712] text-[#fff]">
-        <div class="flex justify-between items-center w-full">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center w-full"
+        >
           <aside class="space-y-4">
             <h1 class="text-3xl font-bold text-white">Muntaha Paribahan</h1>
             <p class="w-[300px] text-start text-[14px]">
@@ -591,7 +595,9 @@
           </nav>
         </div>
         <div class="border-dotted border-b-[2px] w-full mt-4"></div>
-        <div class="flex justify-between items-center mt-8">
+        <div
+          class="flex flex-col md:flex-row gap-3 md:gap-0 justify-between items-center mt-8"
+        >
           <p>@all rights reserved, Muntaha Paribahan services limited.2024</p>
           <p class="flex justify-center items-center gap-4">
             <a>Terms & condition</a>
@@ -607,7 +613,7 @@
       class="sucess hidden bg-[#F2F1F1] min-h-screen flex flex-col justify-center items-center"
     >
       <div
-        class="bg-[#fff] w-[50%] flex justify-center items-center flex-col mx-auto p-7 space-y-10 rounded-xl"
+        class="bg-[#fff] w-full lg:w-[50%] flex justify-center items-center flex-col mx-auto p-7 space-y-10 rounded-xl"
       >
         <p>
           <svg
@@ -639,6 +645,7 @@
         </h1>
         <p>Shortly you will find a confirmation in your email. Continue</p>
         <button
+          onclick="mainUI()"
           class="bg-[#27AE60] text-white text-xl px-11 py-3 font-bold rounded-full"
         >
           Continue
@@ -646,6 +653,5 @@
       </div>
     </section>
     <script src="./script.js"></script>
-    <script src="./utilitis.js"></script>
   </body>
 </html>
